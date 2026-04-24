@@ -268,6 +268,26 @@ h2 span { color: var(--accent); }
 }
 .step h3 { color: #fff; }
 
+/* Destaque para o Card de Gancho */
+#step-1 .highlight-box {
+  border: 1px solid rgba(255, 159, 28, 0.3);
+  background: linear-gradient(135deg, rgba(19, 26, 38, 1) 0%, rgba(25, 34, 50, 1) 100%);
+  box-shadow: 0 0 20px rgba(255, 159, 28, 0.05);
+  position: relative;
+}
+.hook-label {
+  display: inline-block;
+  background: var(--accent);
+  color: #0b0f17;
+  font-size: 0.65rem;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+  
 /* ══ BENEFÍCIOS ══ */
 .benefits-sec { overflow: hidden; padding: 6rem 0; background: transparent; }
 .benefits-title { text-align: center; margin-bottom: 4rem; padding: 0 1.25rem; }
@@ -465,45 +485,18 @@ h2 span { color: var(--accent); }
     </div>
     
     <div class="reveal">
-      <a href="https://pay.hotmart.com/J105513010I?off=4coph92i" class="btn-cta">Ativar meu cérebro grátis por 3 dias →</a>
+      <a href="#oferta" class="btn-cta">Acessar Agora →</a>
       <p style="font-size:.8rem; color:var(--muted); margin-top:1.5rem">Teste Grátis · Nada cobrado hoje · Cancele quando quiser</p>
     </div>
   </div>
 
-  <!-- STRIP -->
-  <div class="strip">
-    <div class="strip-item"><strong>+12.400</strong> assinantes ativos</div>
-    <div class="strip-item">⭐ <strong>4.9/5</strong> avaliação média</div>
-    <div class="strip-item">Baseado em <strong>neurociência</strong></div>
-    <div class="strip-item"><strong>3 dias</strong> grátis para testar</div>
-  </div>
-
-  <!-- DOR -->
-  <section class="dor-sec">
-    <div class="sec-inner">
-      <span class="sec-label">Você reconhece isso?</span>
-      <h2 class="reveal">Seu cérebro manda sinais de alerta.<br><span>A maioria das pessoas ignora.</span></h2>
-      <p class="dor-intro reveal" style="color:var(--muted); margin-bottom:3rem">Não é fraqueza. Não é falta de inteligência. É seu cérebro operando na frequência errada — e isso tem nome, tem causa e tem solução simples.</p>
-      
-      <div class="dor-grid">
-        <div class="dor-card reveal">
-          <span class="dor-icon">🧠</span>
-          <h3>Memória falhando</h3>
-          <p style="font-size:.95rem; color:var(--muted)">Nomes, datas, onde colocou as chaves. Cada lapso é um sinal de que algo precisa de atenção agora.</p>
-        </div>
-        <div class="dor-card reveal" style="transition-delay: 0.1s">
-          <span class="dor-icon">🎯</span>
-          <h3>Foco que some</h3>
-          <p style="font-size:.95rem; color:var(--muted)">Você começa uma tarefa e em minutos está em outro lugar. Concentração sustentada parece impossível.</p>
-        </div>
-        <div class="dor-card reveal" style="transition-delay: 0.2s">
-          <span class="dor-icon">🌫️</span>
-          <h3>Névoa mental</h3>
-          <p style="font-size:.95rem; color:var(--muted)">Raciocínio lento, pensamentos embaralhados. Como se seu cérebro estivesse travado numa marcha baixa.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item"><strong>+12.400</strong> assinantes ativos</div>
+  <div class="strip-item">⭐ <strong>4.9/5</strong> avaliação média</div>
+  <div class="strip-item">Baseado em <strong>neurociência</strong></div>
+  <div class="strip-item"><strong>3 dias</strong> grátis para testar</div>
+</div>
 
   <!-- HISTÓRIA EINSTEIN -->
   <section class="story-sec">
@@ -516,13 +509,30 @@ h2 span { color: var(--accent); }
         <p style="margin-bottom:1.5rem">Enquanto isso, a maioria de nós trabalha cada vez mais e rende cada vez menos.</p>
         <p style="font-weight:700; color:var(--accent); margin-bottom:1.5rem">A resposta está em um dos casos mais bizarros da história da ciência: o roubo do cérebro de Albert Einstein.</p>
 
-        <!-- CARD 1 (INICIALMENTE VISÍVEL) -->
-        <div class="story-step active" id="step-1">
-          <div class="highlight-box">
-            18 de abril de 1955: Einstein morre. Durante a autópsia, um médico rouba o cérebro e desaparece. Por 40 anos, partes do cérebro de Einstein ficaram escondidas em porões, malas de carro e laboratórios improvisados, enquanto o mundo procurava pistas do gênio.
-          </div>
-          <button class="btn-continue-reading" onclick="revealStep(2, this)">→ Continuar lendo</button>
-        </div>
+        <!-- CARD 1 (O GANCHO INVESTIGATIVO) -->
+<div class="story-step active" id="step-1">
+  <div class="highlight-box">
+    <span class="hook-label">● Arquivo Histórico</span>
+    
+    <p style="font-size: 1.25rem; line-height: 1.4; color: #fff; margin-bottom: 1.2rem; font-family: 'Merriweather', serif; font-weight: 700; font-style: italic;">
+      "Existem segredos que a ciência tentou esconder por 40 anos... e o que aconteceu naquele porão é a chave para destravar sua mente hoje."
+    </p>
+
+    <p style="margin-bottom: 1rem;">
+      <strong>18 de abril de 1955.</strong> O mundo lamentava a morte de Albert Einstein. Mas, enquanto os jornais imprimiam as manchetes, algo bizarro acontecia nos bastidores do Hospital de Princeton.
+    </p>
+
+    <p style="margin-bottom: 1rem;">
+      O Dr. Thomas Harvey, responsável pela autópsia, tomou uma decisão perturbadora: <strong>ele roubou o cérebro de Einstein.</strong>
+    </p>
+
+    <p style="font-size: 0.95rem; color: var(--muted);">
+      Sem autorização da família. Sem permissão legal. Ele colocou o órgão em potes de vidro, escondeu em caixas de cidra e <strong>desapareceu.</strong> Por décadas, o paradeiro do cérebro mais brilhante do século foi um mistério absoluto.
+    </p>
+
+    <button class="btn-continue-reading" onclick="revealStep(2, this)">→ Descobrir o que ele encontrou</button>
+  </div>
+</div>
 
         <!-- CARD 2 -->
         <div class="story-step" id="step-2">
@@ -565,7 +575,7 @@ h2 span { color: var(--accent); }
 
       </div>
       <div style="text-align: center; margin-top: 3rem;">
-        <a href="https://pay.hotmart.com/J105513010I?off=4coph92i" class="btn-cta">Começar teste grátis agora →</a>
+        <a href="#oferta" class="btn-cta">Garantir meu Acesso →</a>
       </div>
     </div>
   </section>
@@ -826,10 +836,10 @@ h2 span { color: var(--accent); }
 <script>
 // CONTROLE DO QUIZ COM COMUNICAÇÃO DE IMPACTO
 const diags = [
-  "Isso não é falta de atenção. Seus padrões indicam que seu cérebro está entrando em colapso de sobrecarga. O esquecimento súbito é um sinal de que seus dois hemisférios estão operando de forma desconexa. O protocolo Theta diário reverte exatamente isso.",
-  "Esses lapsos são o sinal silencioso clássico de exaustão neural que a maioria das pessoas ignora. Você não está perdendo a inteligência, apenas operando na frequência errada. Com o NeuroShift, nós forçamos o cérebro a retomar a marcha certa.",
-  "Sua mente está cansada de 'ler no automático' e esquecer o que ia fazer. Isso é resultado de poluição de ondas cerebrais Beta. O protocolo ativa a onda Theta para limpar essa névoa em poucos dias.",
-  "Esse estado de câmera lenta e esquecimento de coisas simples é o passo inicial para um declínio cognitivo prematuro. O bom é que identificamos isso a tempo de usar a estimulação sonora certa."
+  "Pelas suas respostas, não parece ser falta de atenção. Seu cérebro só está sobrecarregado com estímulos demais no dia a dia, e isso afeta diretamente memória e foco.",
+  "Esses lapsos que você descreveu são mais comuns do que parecem. Eles normalmente aparecem quando o cérebro não consegue mais manter o mesmo nível de clareza por muito tempo.",
+  "O que você relatou indica um padrão de distração acumulada. Não é que você esteja esquecendo mais, é que seu cérebro não está conseguindo manter o mesmo ritmo de antes.",
+  "Sua mente provavelmente está funcionando no automático por muito tempo seguido. Isso explica a sensação de cansaço mental e os esquecimentos simples ao longo do dia."
 ];
 
 function nextQ(n) {
